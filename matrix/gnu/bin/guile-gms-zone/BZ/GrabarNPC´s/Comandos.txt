@@ -1,0 +1,9 @@
+Comandos del FilterScript:
+
+"Recuerda que Primero debes Logearte con la RCON de tu Servidor"
+
+/npcveh (Solo Para Grabar si tu Bot esta en un Vehiculo)
+
+/npcpie (Solo Para Drabar si tu Bot esta a Pie)
+
+/npcparar (Para Detener y Guardar la Grabacion en "scriptfiles")

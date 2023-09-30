@@ -1,0 +1,18 @@
+[Informacion]
+ID Fabrica = 0
+Existente = 1
+Pos_X = 1111.551025
+Pos_Y = -976.446838
+Pos_Z = 42.765625
+Pos_A = 180.366378
+Interior_X = 1388.231323
+Interior_Y = 1055.300659
+Interior_Z = 1464.201782
+Interior_A = 181.576797
+InteriorID = 5
+InteriorVW = 10
+Localizacion = Commerce
+Conquistada = 0
+QuienConquisto = Nadie
+IDFamilia = -1
+TiempoConquista = 0

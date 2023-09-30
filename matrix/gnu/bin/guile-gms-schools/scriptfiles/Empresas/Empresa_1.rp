@@ -1,0 +1,21 @@
+[Informacion]
+Nombre = Taller mecánico
+Dueño = Jonathan Mojica
+Tipo = 2
+Seguro = 1
+Comprado = 1
+Exterior_X = 1840.949829
+Exterior_Y = -1870.686645
+Exterior_Z = 13.389745
+Exterior_R = 268.579284
+Exterior_XV = 1842.949218
+Exterior_YV = -1870.736206
+Interior_X = 1893.379394
+Interior_Y = -2203.547363
+Interior_Z = 13.251600
+Interior_R = 357.466400
+Dinero = 0
+Precio = 1
+Interior = 21
+Empleados = 1
+Espacio = 2

@@ -1,0 +1,18 @@
+[Informacion]
+ID Fabrica = 0
+Existente = 1
+Pos_X = 1883.995117
+Pos_Y = -1272.548095
+Pos_Z = 13.546875
+Pos_A = 179.934371
+Interior_X = 1388.231323
+Interior_Y = 1055.300659
+Interior_Z = 1464.201782
+Interior_A = 181.576797
+InteriorID = 6
+InteriorVW = 11
+Localizacion = Glen Park
+Conquistada = 0
+QuienConquisto = Nadie
+IDFamilia = -1
+TiempoConquista = 0

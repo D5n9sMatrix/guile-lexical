@@ -1,0 +1,6 @@
+PCambio=5
+PRuedas=200
+PModificaciones=1000
+PPintura=788
+PArreglar=8000
+

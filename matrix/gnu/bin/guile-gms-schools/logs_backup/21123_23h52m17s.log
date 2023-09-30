@@ -1,0 +1,4 @@
+
+Started server on port: 7778, with maxplayers: 100 lanmode is OFF.
+
+Error in my_thread_global_end(): 3 threads didn't exit

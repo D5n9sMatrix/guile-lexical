@@ -1,0 +1,5 @@
+C:\Users\Claudia ADMIN\Downloads\ngrpp.pwn(53467) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\Claudia ADMIN\Downloads\ngrpp.pwn(53668) : íåïðàâèëüíàÿ òàáóëÿöèÿ
+C:\Users\Claudia ADMIN\Downloads\ngrpp.pwn(2104) : èäåíòèôèêàòîð íå èñïîëüçóåòñÿ: "djson_GameModeExit"
+Pawn compiler 3.2.3664	 	 	Copyright (c) 1997-2017, ITB CompuPhase
+

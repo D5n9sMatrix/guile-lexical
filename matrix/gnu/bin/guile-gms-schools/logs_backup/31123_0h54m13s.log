@@ -1,0 +1,13 @@
+
+Started server on port: 7778, with maxplayers: 100 lanmode is OFF.
+
+samp03svr: Stream.cpp:38: void Stream::SendVoicePacket(VoicePacket&) const: Assertion `pNetGame->pPlayerPool != nullptr' failed.
+
+
+[log-core] fatal signal '6' (SIGABRT) catched   
+
+OGP_HOME_000000003_startup_scr.sh: line 2: 18344 Aborted                 ./samp03svr
+Server './samp03svr  ' crashed with exit code 0.  Respawning...
+
+Started server on port: 7778, with maxplayers: 100 lanmode is OFF.
+

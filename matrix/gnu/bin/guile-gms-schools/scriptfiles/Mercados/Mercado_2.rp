@@ -1,0 +1,21 @@
+[Informacion]
+ID Mercado = 0
+Existente = 1
+Pos_X = 1685.730224
+Pos_Y = -1582.421508
+Pos_Z = 13.546875
+Pos_A = 357.349822
+PosInt_X = 316.544189
+PosInt_Y = -169.922103
+PosInt_Z = 999.601013
+PosInt_A = 358.217407
+BajoConquista = 0
+QuienEstaConquistando = 65535
+Interior = 6
+VirtualWorld = 12
+Localizacion = Commerce
+Conquistado = 0
+QuienConquisto = Nadie
+Familia = -1
+TiempoConquista = 0
+TiempoConquista2 = 0

@@ -1,0 +1,21 @@
+[Informacion]
+ID Mercado = 0
+Existente = 1
+Pos_X = 1693.667602
+Pos_Y = -1321.113891
+Pos_Z = 17.438953
+Pos_A = 96.239593
+PosInt_X = 316.544189
+PosInt_Y = -169.922103
+PosInt_Z = 999.601013
+PosInt_A = 358.217407
+BajoConquista = 0
+QuienEstaConquistando = 65535
+Interior = 6
+VirtualWorld = 13
+Localizacion = Downtown Los Santos
+Conquistado = 0
+QuienConquisto = Nadie
+Familia = -1
+TiempoConquista = 0
+TiempoConquista2 = 0

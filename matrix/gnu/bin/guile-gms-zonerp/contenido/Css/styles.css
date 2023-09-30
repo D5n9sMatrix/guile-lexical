@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "pricedown";
+    src: url(../Fuentes/pricedown.ttf) format("truetype");
+}
+@font-face {
+    font-family: "signatra";
+    src: url(../Fuentes/Signatra.ttf) format("truetype");
+}
+a {
+ 	text-decoration:none;
+ 	color:white;
+ 	font-family:signatra;
+}
+body {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100 */
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top, #1e5799 0%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #1e5799 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	color:white;
+	margin:0;
+}
+header {
+
+	text-align:center;
+	color:white;
+	background:black;
+
+}
+
+#Logo {
+	font-size:70px;
+
+}
+#SubLogo {
+	font-size:20px;
+	padding-left:370px;
+}
+
+
+#Info {
+	text-align:center;
+	font-size:30px;
+}
+#Subinfo {
+	font-family:signatra;
+	font-size:25px;
+
+}
+th#SubinfoM {
+	font-family:signatra;
+	font-size:45px;
+	text-align:center;
+
+
+}
+#SubinfoM {
+	font-family:signatra;
+	font-size:45px;
+	text-align:center;
+
+
+}
+.seccion {
+	font-family:signatra;font-size:35px;color:#white;
+	text-shadow: 2px 2px 5px black;
+}
+
+#aclaracion {
+	color:black;
+	width:1000px;
+	margin:auto;
+	font-family:arial;
+	font-size:15px;
+	height:300px;
+}
+
+#nom {
+	font-family:signatra;
+	font-size:20px;
+}

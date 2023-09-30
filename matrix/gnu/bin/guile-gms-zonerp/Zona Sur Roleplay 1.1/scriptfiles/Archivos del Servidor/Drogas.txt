@@ -1,0 +1,2 @@
+Cocaina=144
+Marihuana=300

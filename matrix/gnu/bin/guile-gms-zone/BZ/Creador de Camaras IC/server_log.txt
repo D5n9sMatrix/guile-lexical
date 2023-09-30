@@ -1,0 +1,367 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:04:20] Error: Your password must be changed from the default password, please change it.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:05:08] Error: Your password must be changed from the default password, please change it.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:06:10] Error: Your password must be changed from the default password, please change it.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:06:31] 
+[20:06:31] Server Plugins
+[20:06:31] --------------
+[20:06:31]  Loaded 0 plugins.
+
+[20:06:31] 
+[20:06:31] Filterscripts
+[20:06:31] ---------------
+[20:06:31]   Loading filterscript 'CamEditor.amx'...
+[20:06:31] 
+--------------------------------------
+[20:06:31]  CamEditor by Drebin
+[20:06:31]  Traduccion Español por Raylan Givens!
+[20:06:31] --------------------------------------
+
+[20:06:31]   Loaded 1 filterscripts.
+
+[20:06:31] Loaded 3 vehicles from: vehicles/trains.txt
+[20:06:31] Loaded 3 vehicles from: vehicles/pilots.txt
+[20:06:31] Loaded 15 vehicles from: vehicles/lv_law.txt
+[20:06:31] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[20:06:31] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[20:06:31] Loaded 38 vehicles from: vehicles/sf_law.txt
+[20:06:31] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[20:06:31] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[20:06:31] Loaded 24 vehicles from: vehicles/ls_law.txt
+[20:06:31] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[20:06:31] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[20:06:31] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[20:06:31] Loaded 71 vehicles from: vehicles/whetstone.txt
+[20:06:31] Loaded 168 vehicles from: vehicles/bone.txt
+[20:06:31] Loaded 61 vehicles from: vehicles/flint.txt
+[20:06:31] Loaded 96 vehicles from: vehicles/tierra.txt
+[20:06:31] Loaded 96 vehicles from: vehicles/red_county.txt
+[20:06:31] Total vehicles from files: 1781
+[20:06:31] 
+---------------------------------------
+[20:06:31] Running Grand Larceny - by the SA-MP team
+
+[20:06:31] ---------------------------------------
+
+[20:06:31] Number of vehicle models: 173
+[20:07:14] [connection] 127.0.0.1:52991 requests connection cookie.
+[20:07:15] [connection] incoming connection: 127.0.0.1:52991 id: 0
+[20:07:15] [join] Elias has joined the server (0:127.0.0.1)
+[20:12:03] [part] Elias has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:53:06] 
+[17:53:06] Server Plugins
+[17:53:06] --------------
+[17:53:06]  Loaded 0 plugins.
+
+[17:53:06] 
+[17:53:06] Filterscripts
+[17:53:06] ---------------
+[17:53:06]   Loading filterscript 'CamEditor.amx'...
+[17:53:06] 
+--------------------------------------
+[17:53:06]  CamEditor by Drebin
+[17:53:06]  Traduccion Español por Raylan Givens!
+[17:53:06] --------------------------------------
+
+[17:53:06]   Loaded 1 filterscripts.
+
+[17:53:06] Loaded 3 vehicles from: vehicles/trains.txt
+[17:53:07] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:53:07] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:53:07] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:53:07] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:53:07] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:53:07] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:53:07] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:53:07] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:53:07] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:53:07] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:53:07] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:53:07] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:53:07] Loaded 168 vehicles from: vehicles/bone.txt
+[17:53:07] Loaded 61 vehicles from: vehicles/flint.txt
+[17:53:07] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:53:07] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:53:07] Total vehicles from files: 1781
+[17:53:07] 
+---------------------------------------
+[17:53:07] Running Grand Larceny - by the SA-MP team
+
+[17:53:07] ---------------------------------------
+
+[17:53:07] Number of vehicle models: 173
+[17:54:26] [connection] 127.0.0.1:53298 requests connection cookie.
+[17:54:27] [connection] incoming connection: 127.0.0.1:53298 id: 0
+[17:54:27] [join] Juarli has joined the server (0:127.0.0.1)
+[17:55:35] [part] Juarli has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:58:37] 
+[17:58:37] Server Plugins
+[17:58:37] --------------
+[17:58:37]  Loaded 0 plugins.
+
+[17:58:37] 
+[17:58:37] Filterscripts
+[17:58:37] ---------------
+[17:58:37]   Loading filterscript 'CamEditor.amx'...
+[17:58:37] 
+--------------------------------------
+[17:58:37]  CamEditor by Drebin
+[17:58:37]  Traduccion Español por Raylan Givens!
+[17:58:37] --------------------------------------
+
+[17:58:37]   Loaded 1 filterscripts.
+
+[17:58:37] Loaded 3 vehicles from: vehicles/trains.txt
+[17:58:37] Loaded 3 vehicles from: vehicles/pilots.txt
+[17:58:37] Loaded 15 vehicles from: vehicles/lv_law.txt
+[17:58:37] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[17:58:37] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[17:58:37] Loaded 38 vehicles from: vehicles/sf_law.txt
+[17:58:37] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[17:58:37] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[17:58:37] Loaded 24 vehicles from: vehicles/ls_law.txt
+[17:58:37] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[17:58:37] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[17:58:37] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[17:58:37] Loaded 71 vehicles from: vehicles/whetstone.txt
+[17:58:37] Loaded 168 vehicles from: vehicles/bone.txt
+[17:58:37] Loaded 61 vehicles from: vehicles/flint.txt
+[17:58:37] Loaded 96 vehicles from: vehicles/tierra.txt
+[17:58:37] Loaded 96 vehicles from: vehicles/red_county.txt
+[17:58:37] Total vehicles from files: 1781
+[17:58:37] 
+---------------------------------------
+[17:58:37] Running Grand Larceny - by the SA-MP team
+
+[17:58:37] ---------------------------------------
+
+[17:58:37] Number of vehicle models: 173
+[17:59:05] [connection] 127.0.0.1:62767 requests connection cookie.
+[17:59:06] [connection] incoming connection: 127.0.0.1:62767 id: 0
+[17:59:06] [join] Juarli has joined the server (0:127.0.0.1)
+[18:10:29] [part] Juarli has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:23:48] 
+[18:23:48] Server Plugins
+[18:23:48] --------------
+[18:23:48]  Loaded 0 plugins.
+
+[18:23:49] 
+[18:23:49] Filterscripts
+[18:23:49] ---------------
+[18:23:49]   Loading filterscript 'CamEditor.amx'...
+[18:23:49] 
+--------------------------------------
+[18:23:49]  CamEditor by Drebin
+[18:23:49]  Traduccion Español por Raylan Givens!
+[18:23:49] --------------------------------------
+
+[18:23:49]   Loaded 1 filterscripts.
+
+[18:23:49] Loaded 3 vehicles from: vehicles/trains.txt
+[18:23:49] Loaded 3 vehicles from: vehicles/pilots.txt
+[18:23:49] Loaded 15 vehicles from: vehicles/lv_law.txt
+[18:23:49] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[18:23:49] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[18:23:49] Loaded 38 vehicles from: vehicles/sf_law.txt
+[18:23:49] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[18:23:49] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[18:23:49] Loaded 24 vehicles from: vehicles/ls_law.txt
+[18:23:49] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[18:23:49] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[18:23:49] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[18:23:49] Loaded 71 vehicles from: vehicles/whetstone.txt
+[18:23:49] Loaded 168 vehicles from: vehicles/bone.txt
+[18:23:49] Loaded 61 vehicles from: vehicles/flint.txt
+[18:23:49] Loaded 96 vehicles from: vehicles/tierra.txt
+[18:23:49] Loaded 96 vehicles from: vehicles/red_county.txt
+[18:23:49] Total vehicles from files: 1781
+[18:23:49] 
+---------------------------------------
+[18:23:49] Running Grand Larceny - by the SA-MP team
+
+[18:23:49] ---------------------------------------
+
+[18:23:49] Number of vehicle models: 173
+[18:24:21] [connection] 127.0.0.1:55070 requests connection cookie.
+[18:24:22] [connection] incoming connection: 127.0.0.1:55070 id: 0
+[18:24:22] [join] Juarli has joined the server (0:127.0.0.1)
+[18:36:08] [part] Juarli has left the server (0:1)
+[18:36:39] [connection] 127.0.0.1:57508 requests connection cookie.
+[18:36:40] [connection] incoming connection: 127.0.0.1:57508 id: 0
+[18:36:40] [join] Juarli has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:47:43] 
+[18:47:43] Server Plugins
+[18:47:43] --------------
+[18:47:43]  Loaded 0 plugins.
+
+[18:47:43] 
+[18:47:43] Filterscripts
+[18:47:43] ---------------
+[18:47:43]   Loading filterscript 'CamEditor.amx'...
+[18:47:43] 
+--------------------------------------
+[18:47:43]  CamEditor by Drebin
+[18:47:43]  Traduccion Español por Raylan Givens!
+[18:47:43] --------------------------------------
+
+[18:47:43]   Loaded 1 filterscripts.
+
+[18:47:43] Loaded 3 vehicles from: vehicles/trains.txt
+[18:47:43] Loaded 3 vehicles from: vehicles/pilots.txt
+[18:47:44] Loaded 15 vehicles from: vehicles/lv_law.txt
+[18:47:44] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[18:47:44] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[18:47:44] Loaded 38 vehicles from: vehicles/sf_law.txt
+[18:47:44] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[18:47:44] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[18:47:44] Loaded 24 vehicles from: vehicles/ls_law.txt
+[18:47:44] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[18:47:44] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[18:47:44] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[18:47:44] Loaded 71 vehicles from: vehicles/whetstone.txt
+[18:47:44] Loaded 168 vehicles from: vehicles/bone.txt
+[18:47:44] Loaded 61 vehicles from: vehicles/flint.txt
+[18:47:44] Loaded 96 vehicles from: vehicles/tierra.txt
+[18:47:44] Loaded 96 vehicles from: vehicles/red_county.txt
+[18:47:44] Total vehicles from files: 1781
+[18:47:44] 
+---------------------------------------
+[18:47:44] Running Grand Larceny - by the SA-MP team
+
+[18:47:44] ---------------------------------------
+
+[18:47:44] Number of vehicle models: 173
+[18:49:04] [connection] 127.0.0.1:57090 requests connection cookie.
+[18:49:05] [connection] incoming connection: 127.0.0.1:57090 id: 0
+[18:49:06] [join] Juarli has joined the server (0:127.0.0.1)
+[18:51:15] [part] Juarli has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:16:35] 
+[08:16:35] Server Plugins
+[08:16:35] --------------
+[08:16:35]  Loaded 0 plugins.
+
+[08:16:35] 
+[08:16:35] Filterscripts
+[08:16:35] ---------------
+[08:16:35]   Loading filterscript 'CamEditor.amx'...
+[08:16:35] 
+--------------------------------------
+[08:16:35]  CamEditor by Drebin
+[08:16:35]  Traduccion Español por Raylan Givens!
+[08:16:35] --------------------------------------
+
+[08:16:35]   Loaded 1 filterscripts.
+
+[08:16:35] Loaded 3 vehicles from: vehicles/trains.txt
+[08:16:35] Loaded 3 vehicles from: vehicles/pilots.txt
+[08:16:35] Loaded 15 vehicles from: vehicles/lv_law.txt
+[08:16:35] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[08:16:35] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[08:16:35] Loaded 38 vehicles from: vehicles/sf_law.txt
+[08:16:35] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[08:16:35] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[08:16:35] Loaded 24 vehicles from: vehicles/ls_law.txt
+[08:16:35] Loaded 37 vehicles from: vehicles/ls_airport.txt
+[08:16:35] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[08:16:35] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[08:16:35] Loaded 71 vehicles from: vehicles/whetstone.txt
+[08:16:35] Loaded 168 vehicles from: vehicles/bone.txt
+[08:16:35] Loaded 61 vehicles from: vehicles/flint.txt
+[08:16:35] Loaded 96 vehicles from: vehicles/tierra.txt
+[08:16:35] Loaded 96 vehicles from: vehicles/red_county.txt
+[08:16:35] Total vehicles from files: 1781
+[08:16:35] 
+---------------------------------------
+[08:16:35] Running Grand Larceny - by the SA-MP team
+
+[08:16:35] ---------------------------------------
+
+[08:16:35] Number of vehicle models: 173
+[08:17:13] [connection] 127.0.0.1:62421 requests connection cookie.
+[08:17:14] [connection] incoming connection: 127.0.0.1:62421 id: 0
+[08:17:14] [join] Juarli_Manuel has joined the server (0:127.0.0.1)
+[08:21:37] [part] Juarli_Manuel has left the server (0:1)
+[08:22:07] [connection] 127.0.0.1:49191 requests connection cookie.
+[08:22:08] [connection] incoming connection: 127.0.0.1:49191 id: 0
+[08:22:08] [join] Juarli_Manuel has joined the server (0:127.0.0.1)
+[08:30:02] [part] Juarli_Manuel has left the server (0:1)

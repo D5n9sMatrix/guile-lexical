@@ -1,0 +1,20 @@
+[Informacion]
+ID Territorio = 0
+Existente = 1
+Pos_X = 2086.250244
+Pos_Y = -1755.057861
+Pos_Z = 13.401515
+Pos_A = 78.999481
+Conquistado = 1
+QuienConquisto = Thug Life
+IDFaccion = 3
+TiempoConquista = 0
+PosHQ_X = 0.000000
+PosHQ_Y = 0.000000
+PosHQ_Z = 0.000000
+PosHQ_A = 0.000000
+IntHQ_X = 0.000000
+IntHQ_Y = 0.000000
+IntHQ_Z = 0.000000
+IntHQ_A = 0.000000
+IDFacHQ = 0

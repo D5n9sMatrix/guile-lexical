@@ -1,0 +1,19 @@
+
+Started server on port: 7778, with maxplayers: 100 lanmode is OFF.
+
+Error in my_thread_global_end(): 3 threads didn't exit
+
+Started server on port: 7778, with maxplayers: 100 lanmode is OFF.
+
+Error in my_thread_global_end(): 3 threads didn't exit
+OGP_HOME_000000003_startup_scr.sh: line 2: 31409 Segmentation fault      ./samp03svr
+Server './samp03svr  ' crashed with exit code 0.  Respawning...
+
+Started server on port: 7778, with maxplayers: 100 lanmode is OFF.
+
+Error in my_thread_global_end(): 3 threads didn't exit
+OGP_HOME_000000003_startup_scr.sh: line 2: 31867 Segmentation fault      ./samp03svr
+Server './samp03svr  ' crashed with exit code 0.  Respawning...
+
+Started server on port: 7778, with maxplayers: 100 lanmode is OFF.
+

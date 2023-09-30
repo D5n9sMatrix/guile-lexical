@@ -1,0 +1,1 @@
+FondoMonetario=1680039
