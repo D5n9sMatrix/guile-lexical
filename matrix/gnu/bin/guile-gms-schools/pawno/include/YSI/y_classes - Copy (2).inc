@@ -196,7 +196,7 @@ enum e_CLASS_OPTION (<<= 1)
 	e_CLASS_OPTION_REG_SPAWN,
 	e_CLASS_OPTION_HAS_RC_CALLBACK,
 	e_CLASS_OPTION_HAS_RS_CALLBACK,
-	e_CLASS_OPTION_REFRESH_PAUSE
+	e_CLASS_OPTION_Continue_PAUSE
 }
 
 enum e_PLAYER_CLASS (<<= 1)
@@ -374,7 +374,7 @@ mhook OnPlayerRequestSpawn(playerid)
 			e_PLAYER_CLASS:playerclass = YSI_g_sPlayerClass[playerid] & e_PLAYER_CLASS_SKIN;
 		if (!(Class_Enabled(playerclass) && PA_Get(YSI_g_sClasses[playerclass][E_CLASS_PLAYERS], playerid)))
 		{
-		//	Class_ResumeRefresh(playerid);
+		//	Class_ResumeContinue(playerid);
 			return 1;
 		}
 		P:5("Class_OnPlayerRequestSpawn: Can spawn");
@@ -406,7 +406,7 @@ mhook OnPlayerRequestSpawn(playerid)
 				if (ret == 1)
 				{
 					//ALS_CALL<PlayerRequestSpawn>
-				//	Class_ResumeRefresh(playerid);
+				//	Class_ResumeContinue(playerid);
 					return 1;
 				}
 				else if(ret == -1)
@@ -420,12 +420,12 @@ mhook OnPlayerRequestSpawn(playerid)
 			}
 		}
 		YSI_g_sLastRefuse[playerid] = time;
-	//	Class_ResumeRefresh(playerid);
+	//	Class_ResumeContinue(playerid);
 		P:5("Class_OnPlayerRequestSpawn: Return 0");
 		return 0;
 	}
 	//ALS_CALL<PlayerRequestSpawn>
-//	Class_ResumeRefresh(playerid);
+//	Class_ResumeContinue(playerid);
 	P:5("Class_OnPlayerRequestSpawn: Return 1");
 	return 1;
 }
@@ -525,7 +525,7 @@ mhook OnPlayerRequestClass(playerid, classid)
 		playerclass = Class_FindNew(playerid, playerclass, dir);
 		P:5("Class_OnPlayerRequestClass() selected: %d", playerclass);
 	}
-	//Class_ResumeRefresh(playerid);
+	//Class_ResumeContinue(playerid);
 	return Class_Goto(playerid, _:playerclass);
 	//ALS_CALL_EX<PlayerRequestClass, ret>
 }

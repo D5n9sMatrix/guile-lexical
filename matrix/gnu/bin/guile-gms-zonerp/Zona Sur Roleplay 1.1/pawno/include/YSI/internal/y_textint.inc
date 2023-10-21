@@ -258,7 +258,7 @@ public OnGameModeInit()
 	if (!YSI_FILTERSCRIPT)
 	{
 		//Text_SpecialInit();
-		Text_RefreshLoaded();
+		Text_ContinueLoaded();
 		_Styles_SpecialInit();
 	}
 	P:1("TextInt_OnGameModeInit ended");
@@ -283,7 +283,7 @@ public OnFilterScriptInit()
 		TextInt_OnFilterScriptInit();
 	#endif
 	//Text_SpecialInit();
-	Text_RefreshLoaded();
+	Text_ContinueLoaded();
 	_Styles_SpecialInit();
 	P:1("TextInt_OnFilterScriptInit ended");
 	return 1;
@@ -307,7 +307,7 @@ public OnFilterScriptInit()
 //	P:1("Text_SpecialInit called");
 //	// Scan the AMX for all public functions of the type "XX@YY@NN@yX_".  These
 //	// are the declarations for included texts.
-//	Text_RefreshLoaded();
+//	Text_ContinueLoaded();
 //	_Styles_SpecialInit();
 //	P:2("Text_SpecialInit ended");
 //}
@@ -423,7 +423,7 @@ hook OnScriptExit()
 		}
 	}
 	state y_text_ending:y;
-	CallRemoteFunction("Text_RefreshLoaded", "");
+	CallRemoteFunction("Text_ContinueLoaded", "");
 }
 
 /**--------------------------------------------------------------------------**\
@@ -456,7 +456,7 @@ public Text_ResetLoaded() <y_text_ending:n>
 }
 
 /**--------------------------------------------------------------------------**\
-<summary>Text_RefreshLoaded</summary>
+<summary>Text_ContinueLoaded</summary>
 <returns>
 	-
 </returns>
@@ -468,18 +468,18 @@ public Text_ResetLoaded() <y_text_ending:n>
 </remarks>
 \**--------------------------------------------------------------------------**/
 
-forward Text_RefreshLoaded();
+forward Text_ContinueLoaded();
 
-public Text_RefreshLoaded() <y_text_ending:y>
+public Text_ContinueLoaded() <y_text_ending:y>
 {
-	//printf("Text_RefreshLoaded: y");
+	//printf("Text_ContinueLoaded: y");
 	// Do nothing, only called for other scripts to check that all their text
 	// items are still loaded.
 }
 
-public Text_RefreshLoaded() <y_text_ending:n>
+public Text_ContinueLoaded() <y_text_ending:n>
 {
-	//printf("Text_RefreshLoaded: n");
+	//printf("Text_ContinueLoaded: n");
 	if (Langs_GetLanguageCount() == Language:0)
 	{
 		P:E("No languages found - Did you add \"Langs_AddLanguage\" to the script init (NOT \"main\")?");

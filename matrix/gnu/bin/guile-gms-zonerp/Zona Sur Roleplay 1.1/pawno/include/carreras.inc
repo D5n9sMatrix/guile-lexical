@@ -32,7 +32,7 @@ forward LockRacer(i);
 forward UnlockRacer(i);
 //forward SaveScores(playerid);   				// After race, if new best times have been made, saves them.
 forward GetRaceTick(playerid);			// Gets amount of ticks the player was racing
-forward ReadyRefresh(playerid);    		// Check the /ready status of players and start the race when ready
+forward ReadyContinue(playerid);    		// Check the /ready status of players and start the race when ready
 forward RaceSound(playerid,sound);      // Plays <sound> for <playerid>
 forward BActiveCP(playerid,sele);       // Gives the player selected checkpoint
 forward endrace(playerid);                      // Ends the race, whether it ended normally or by /endrace. Cleans the variables.
@@ -185,7 +185,7 @@ Carreras_OnPlayerDisconnect(playerid)
 		}
 		if(RaceParticipant[playerid] < 3 && RaceStart[playerid] == 0 && !(RaceParticipant[playerid]==3 && RaceStart[playerid] == 1))
 		{ //Doing readycheck since someone left, but not if they disconnected during countdown.
-		    ReadyRefresh(playerid);
+		    ReadyContinue(playerid);
 		}
 	    Participants--;
 	    RaceParticipant[playerid]=0;
@@ -236,7 +236,7 @@ Carreras_OnPlayerCommandText(playerid, cmdtext[])
             SendClientMessage(playerid, Amarillo, "/editrace para editar una carrera  ||  /saverace [name] para guardar las carreras");
             SendClientMessage(playerid, Amarillo, "/cp para hacer un checkpoint nuevo  ||  /scp para selecionar un checkpoint");
             SendClientMessage(playerid, Amarillo, "/dcp para borrarlo  ||  /mcp para moverlo  ||  /icp para insertar uno");
-            SendClientMessage(playerid, Amarillo, "/rcp para remplazarlo por otro nuevo  ||  /cpsize para cambiar el tamaño del checkpoint");
+            SendClientMessage(playerid, Amarillo, "/rcp para remplazarlo por otro nuevo  ||  /cpsize para cambiar el tamaï¿½o del checkpoint");
             SendClientMessage(playerid, Amarillo, "/revcps para invertir el orden de los cps  || /renamerace para cambiar el nombre");
             return SendClientMessage(playerid, Amarillo, "/clearcps para borrarlos todos");
         }
@@ -947,7 +947,7 @@ Carreras_OnPlayerCommandText(playerid, cmdtext[])
         {
 
             RaceParticipant[playerid]=3;
-            ReadyRefresh(playerid);
+            ReadyContinue(playerid);
         }
         else if (PState == PLAYER_STATE_PASSENGER ) SendClientMessage(playerid,Rojo,"ERROR: Tienes que estar conduciendo tu mismo el coche!");
         else if(RaceParticipant[playerid] == 1 || !IsPlayerInRaceCheckpoint(playerid)) SendClientMessage(playerid,Rojo,"ERROR: Tienes que estar en el checkpoint de inicio!.");
@@ -1007,7 +1007,7 @@ Carreras_OnPlayerCommandText(playerid, cmdtext[])
         {
             if(!strlen(CircuitoActivo))
             {
-                SendClientMessage(playerid, Rojo, "Ningún circuito abierto)");
+                SendClientMessage(playerid, Rojo, "Ningï¿½n circuito abierto)");
                 return 1;
             }
             CircuitoActivo="";
@@ -1084,7 +1084,7 @@ Carreras_OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 			if(RaceParticipant[playerid]==2 && PState == PLAYER_STATE_DRIVER)
 			{
 				RaceParticipant[playerid]=3;
-				ReadyRefresh(playerid);
+				ReadyContinue(playerid);
                 return 1;                
 			}
 			else if (PState != PLAYER_STATE_DRIVER) SendClientMessage(playerid,Rojo,"ERROR: Tienes que estar conduciendo tu mismo el coche!");
@@ -1339,7 +1339,7 @@ public RaceSound(playerid,sound)
 	PlayerPlaySound(playerid,sound,x,y,z);
 }
 
-public ReadyRefresh(playerid)
+public ReadyContinue(playerid)
 {
 	if(RaceActive[playerid]==1) //No countdown if no race is active (could occur with /leave)
 	{

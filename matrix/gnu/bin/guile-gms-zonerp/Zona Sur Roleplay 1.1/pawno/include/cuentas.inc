@@ -68,8 +68,8 @@ Cuentas_OnPlayerRequestClass(playerid)
 	if(/*!IsValidNPC(playerid) && */PlayerInfo[playerid][pJugando] == 0)
 	{
 		if(Registrado[playerid] == 0) { SendClientMessage(playerid, Amarillo, "Debes registrarte en http://oldschool.es/pcu para poder ingresar al servidor."); Kick(playerid); return 1;}
-		format(string,sizeof(string),"\n  Bienvenido de vuelta %s!\n\n  Escribe la contraseña de tu cuenta:\n",pName(playerid));
-		ShowPlayerDialog(playerid, 1001, DIALOG_STYLE_INPUT, ">> Iniciar sesión!", string, "Log-in", "Cancelar");
+		format(string,sizeof(string),"\n  Bienvenido de vuelta %s!\n\n  Escribe la contraseï¿½a de tu cuenta:\n",pName(playerid));
+		ShowPlayerDialog(playerid, 1001, DIALOG_STYLE_INPUT, ">> Iniciar sesiï¿½n!", string, "Log-in", "Cancelar");
 		return 0;
 	}
 	return 1;
@@ -289,7 +289,7 @@ public Cuentas_OnDialogResponse(playerid, dialogid, response, listitem, inputtex
 		}
 		else
 		{
-			ShowPlayerDialog(playerid, 1001, DIALOG_STYLE_INPUT, ">>  Contraseña incorrecta!", "\n  Esa no es la contraseña!\n\n  Escribe la contraseña correcta, porfavor:\n", "Log-in", "Cancelar");
+			ShowPlayerDialog(playerid, 1001, DIALOG_STYLE_INPUT, ">>  Contraseï¿½a incorrecta!", "\n  Esa no es la contraseï¿½a!\n\n  Escribe la contraseï¿½a correcta, porfavor:\n", "Log-in", "Cancelar");
 		}
 	}
 	return 1;
@@ -440,13 +440,13 @@ public OnPlayerLogin(playerid)
 	GetValues(playerid, "Muebles");
 	
 	new Bloqueado = GetValue(playerid, "Bloqueado");
-	if(Bloqueado == 1){ SendClientMessage(playerid,Naranja,"Esta cuenta está bloqueada, pasate por el foro para solucionarlo."); return Kick(playerid); }
+	if(Bloqueado == 1){ SendClientMessage(playerid,Naranja,"Esta cuenta estï¿½ bloqueada, pasate por el foro para solucionarlo."); return Kick(playerid); }
 	
 	
 	new Certificacion = GetValue(playerid, "Certificacion");
-	if(Certificacion == 0){ SendClientMessage(playerid,Naranja,"Aún no has validado el email de tu cuenta, ni pasada la certificacón."); return Kick(playerid);}
-	if(Certificacion == 3){ SendClientMessage(playerid,Naranja,"Aún no has terminado el proceso de certificación."); return Kick(playerid);}
-	if(Certificacion == 2){ SendClientMessage(playerid,Naranja,"Has sido reeducado y aún no has pasado de nuevo el proceso de certificación."); return Kick(playerid);}
+	if(Certificacion == 0){ SendClientMessage(playerid,Naranja,"Aï¿½n no has validado el email de tu cuenta, ni pasada la certificacï¿½n."); return Kick(playerid);}
+	if(Certificacion == 3){ SendClientMessage(playerid,Naranja,"Aï¿½n no has terminado el proceso de certificaciï¿½n."); return Kick(playerid);}
+	if(Certificacion == 2){ SendClientMessage(playerid,Naranja,"Has sido reeducado y aï¿½n no has pasado de nuevo el proceso de certificaciï¿½n."); return Kick(playerid);}
 	SetPlayerScore(playerid, GetPlayerLevel(playerid));
 	
 	if(PlayerInfo[playerid][pPhousekey] == NOEXISTE)
@@ -456,7 +456,7 @@ public OnPlayerLogin(playerid)
 		PlayerInfo[playerid][pPos_z] = 13.5928;
 		PlayerInfo[playerid][pVw] = 0;
 		PlayerInfo[playerid][pInt] = 0;
-		SendClientMessage(playerid,Amarillo, "* Búscate un lugar para dormir, o siempre apareceras aqui.");
+		SendClientMessage(playerid,Amarillo, "* Bï¿½scate un lugar para dormir, o siempre apareceras aqui.");
 	}
 	
 	if(PlayerInfo[playerid][pDuty] == 0)
@@ -503,7 +503,7 @@ public OnPlayerLogin(playerid)
         restante_segundos -= restante_horas*60*60;
 		new restante_minutos = (restante_segundos /60);
 		restante_segundos -= restante_minutos*60;
-		format(string, 128, "PREMIUM: %s {FFFFFF} - {77c7ff}TIEMPO RESTANTE:{FFFFFF} %d días %d horas %d minutos %d segundos", Premium[GetPlayerPremium(playerid)], restante_dias, restante_horas, restante_minutos, restante_segundos); 
+		format(string, 128, "PREMIUM: %s {FFFFFF} - {77c7ff}TIEMPO RESTANTE:{FFFFFF} %d dï¿½as %d horas %d minutos %d segundos", Premium[GetPlayerPremium(playerid)], restante_dias, restante_horas, restante_minutos, restante_segundos); 
 		SendClientMessage(playerid, AzulClaro, string);
 		new restante;
 		restante = (((PlayerInfo[playerid][pSeguroMedico] - gettime()) /60) /60) /24;
@@ -513,7 +513,7 @@ public OnPlayerLogin(playerid)
 			{
 				PlayerInfo[playerid][pSeguroMedico] = gettime() + (7 * 24 * 60 * 60);
 				SaveValue(playerid, "SeguroMedico", PlayerInfo[playerid][pSeguroMedico]);
-				SendClientMessage(playerid, Blanco, " * Tu seguro médico fue renovado por un semana más.");
+				SendClientMessage(playerid, Blanco, " * Tu seguro mï¿½dico fue renovado por un semana mï¿½s.");
 			}
 		}
 		new dia, mes, ano;
@@ -532,7 +532,7 @@ public OnPlayerLogin(playerid)
 					PlayerInfo[playerid][pGunLicM] = 1;
 					PlayerInfo[playerid][pGunLicD] = dia;
 				}
-				SendClientMessage(playerid, Blanco, " * Tu licencia de armas fue renovada por un mes más.");
+				SendClientMessage(playerid, Blanco, " * Tu licencia de armas fue renovada por un mes mï¿½s.");
 				SaveValues(playerid, "LArmas");
 			}
 		}
@@ -550,7 +550,7 @@ public OnPlayerLogin(playerid)
 					PlayerInfo[playerid][pGunLicM] = 1;
 					PlayerInfo[playerid][pGunLicD] = dia;
 				}
-				SendClientMessage(playerid, Blanco, " * Tu licencia de armas fue renovada por un mes más.");
+				SendClientMessage(playerid, Blanco, " * Tu licencia de armas fue renovada por un mes mï¿½s.");
 				SaveValues(playerid, "LArmas");
 			}
 		}
@@ -558,8 +558,8 @@ public OnPlayerLogin(playerid)
 	return 1;
 }
 
-forward RefreshPos(playerid);
-public RefreshPos(playerid)
+forward ContinuePos(playerid);
+public ContinuePos(playerid)
 {	
 //	if(IsValidNPC(playerid)) return 1;
 	GetPlayerPos(playerid, PlayerInfo[playerid][pPos_x], PlayerInfo[playerid][pPos_y], PlayerInfo[playerid][pPos_z]);
@@ -939,7 +939,7 @@ public ColocarPosJugador(playerid)
     SetCameraBehindPlayer(playerid); //to prevent some bugs
 	format(string,sizeof(string),"Bienvenido a OldSchool RP, %s.", pName(playerid));
 	SendClientMessage(playerid,Naranja,string);
-	SendClientMessage(playerid,AmarilloClaro,"Acércate al puesto de perritos calientes si necesitas información.");
+	SendClientMessage(playerid,AmarilloClaro,"Acï¿½rcate al puesto de perritos calientes si necesitas informaciï¿½n.");
 	return 1;
 }
 

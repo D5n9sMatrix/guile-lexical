@@ -204,7 +204,7 @@ enum e_CLASS_OPTION (<<= 1)
 	e_CLASS_OPTION_REG_SPAWN,
 	e_CLASS_OPTION_HAS_RC_CALLBACK,
 	e_CLASS_OPTION_HAS_RS_CALLBACK,
-	e_CLASS_OPTION_REFRESH_PAUSE
+	e_CLASS_OPTION_Continue_PAUSE
 }
 
 enum e_PLAYER_CLASS (<<= 1)
@@ -250,11 +250,11 @@ forward OnPlayerRequestClassEx_(playerid, classid);
 
 // This is set to not have to repeatedly update a player in a large set of
 // group updates.  It is set and cleared in the request callbacks.
-#define Class_PauseRefresh(%1) \
-	(YSI_g_sClassOptions |= e_CLASS_OPTION_REFRESH_PAUSE | e_CLASS_OPTION:(%1))
+#define Class_PauseContinue(%1) \
+	(YSI_g_sClassOptions |= e_CLASS_OPTION_Continue_PAUSE | e_CLASS_OPTION:(%1))
 
 #define Class_IsPaused(%1) \
-	((YSI_g_sClassOptions & (e_CLASS_OPTION_REFRESH_PAUSE | e_CLASS_OPTION_PAUSED)) == (e_CLASS_OPTION_REFRESH_PAUSE | e_CLASS_OPTION:(%1)))
+	((YSI_g_sClassOptions & (e_CLASS_OPTION_Continue_PAUSE | e_CLASS_OPTION_PAUSED)) == (e_CLASS_OPTION_Continue_PAUSE | e_CLASS_OPTION:(%1)))
 
 /*----------------------------------------------------------------------------*\
 Function:
@@ -473,7 +473,7 @@ mhook OnPlayerRequestSpawn(playerid)
 {
 	P:2("hook Class_OnPlayerRequestSpawn called: %d", playerid);
 	//P:2("Class_OnPlayerRequestSpawn called");
-	Class_PauseRefresh(playerid);
+	Class_PauseContinue(playerid);
 	if (YSI_g_sClassCount)
 	{
 		P:5("Class_OnPlayerRequestSpawn: Has class count");
@@ -481,7 +481,7 @@ mhook OnPlayerRequestSpawn(playerid)
 			e_PLAYER_CLASS:playerclass = YSI_g_sPlayerClass[playerid] & e_PLAYER_CLASS_SKIN;
 		if (!(Class_Enabled(playerclass) && PA_Get(YSI_g_sClasses[playerclass][E_CLASS_PLAYERS], playerid)))
 		{
-			Class_ResumeRefresh(playerid);
+			Class_ResumeContinue(playerid);
 			return 1;
 		}
 		P:5("Class_OnPlayerRequestSpawn: Can spawn");
@@ -513,7 +513,7 @@ mhook OnPlayerRequestSpawn(playerid)
 				if (ret == 1)
 				{
 					//ALS_CALL<PlayerRequestSpawn>
-					Class_ResumeRefresh(playerid);
+					Class_ResumeContinue(playerid);
 					return 1;
 				}
 				else if(ret == -1)
@@ -527,12 +527,12 @@ mhook OnPlayerRequestSpawn(playerid)
 			}
 		}
 		YSI_g_sLastRefuse[playerid] = time;
-		Class_ResumeRefresh(playerid);
+		Class_ResumeContinue(playerid);
 		P:5("Class_OnPlayerRequestSpawn: Return 0");
 		return 0;
 	}
 	//ALS_CALL<PlayerRequestSpawn>
-	Class_ResumeRefresh(playerid);
+	Class_ResumeContinue(playerid);
 	P:5("Class_OnPlayerRequestSpawn: Return 1");
 	return 1;
 }
@@ -581,10 +581,10 @@ static stock e_PLAYER_CLASS:Class_FindNew(playerid, e_PLAYER_CLASS:playerclass, 
 	return playerclass;
 }
 
-static stock Class_ResumeRefresh(playerid)
+static stock Class_ResumeContinue(playerid)
 {
-	P:4("Class_ResumeRefresh called: %i", playerid);
-	YSI_g_sClassOptions &= ~(e_CLASS_OPTION_REFRESH_PAUSE | e_CLASS_OPTION_PAUSED);
+	P:4("Class_ResumeContinue called: %i", playerid);
+	YSI_g_sClassOptions &= ~(e_CLASS_OPTION_Continue_PAUSE | e_CLASS_OPTION_PAUSED);
 	new
 		e_PLAYER_CLASS:curclass = YSI_g_sPlayerClass[playerid] & e_PLAYER_CLASS_SKIN;
 	if (!PA_Get(YSI_g_sClasses[curclass][E_CLASS_PLAYERS], playerid))
@@ -618,7 +618,7 @@ static stock Class_DoOnPlayerRequestClass(playerid, classid)
 {
 	P:4("Class_DoOnPlayerRequestClass called: %d, %d", playerid, classid);
 	//P:2("Class_OnPlayerRequestClass() start");
-	Class_PauseRefresh(playerid);
+	Class_PauseContinue(playerid);
 	//YSI_g_sPlayerClass[playerid] |= e_PLAYER_CLASS_SELECT;
 	new
 		e_PLAYER_CLASS:playerclass = YSI_g_sPlayerClass[playerid],
@@ -630,7 +630,7 @@ static stock Class_DoOnPlayerRequestClass(playerid, classid)
 		// People aren't allowed to return to class selection.
 		//SpawnPlayer(playerid);
 		SetTimerEx("_Class_DoRespawn", 0, 0, "i", playerid);
-		//Class_ResumeRefresh(playerid);
+		//Class_ResumeContinue(playerid);
 		return -1;
 	}
 	// Spawned from returning to class selection but not meant to.
@@ -643,14 +643,14 @@ static stock Class_DoOnPlayerRequestClass(playerid, classid)
 		SetSpawnInfo(playerid, NO_TEAM, Class_Skin(e_PLAYER_CLASS:playerclass), Class_X(e_PLAYER_CLASS:playerclass), Class_Y(e_PLAYER_CLASS:playerclass), Class_Z(e_PLAYER_CLASS:playerclass), Class_A(e_PLAYER_CLASS:playerclass), 0, 0, 0, 0, 0, 0);
 		//SpawnPlayer(playerid);
 		SetTimerEx("_Class_DoRespawn", 0, 0, "i", playerid);
-		//Class_ResumeRefresh(playerid);
+		//Class_ResumeContinue(playerid);
 		return 1;
 	}*/
 	if (playerclass & e_PLAYER_CLASS_DENY)
 	{
 		TogglePlayerControllable(playerid, false);
 		TogglePlayerSpectating(playerid, true);
-		Class_ResumeRefresh(playerid);
+		Class_ResumeContinue(playerid);
 		return 0;
 	}
 	switch (playerclass & e_PLAYER_CLASS_PRESS)
@@ -705,8 +705,8 @@ static stock Class_DoOnPlayerRequestClass(playerid, classid)
 		playerclass = Class_FindNew(playerid, playerclass, dir);
 		P:5("Class_OnPlayerRequestClass() selected: %d", playerclass);
 	}
-	//Class_ResumeRefresh(playerid);
-	YSI_g_sClassOptions &= ~(e_CLASS_OPTION_REFRESH_PAUSE | e_CLASS_OPTION_PAUSED);
+	//Class_ResumeContinue(playerid);
+	YSI_g_sClassOptions &= ~(e_CLASS_OPTION_Continue_PAUSE | e_CLASS_OPTION_PAUSED);
 	return Class_Goto(playerid, _:playerclass);
 	//ALS_CALL_EX<PlayerRequestClass, ret>
 }

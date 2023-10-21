@@ -770,7 +770,7 @@ public _Class_OtherRequestSpawn(playerid)
 				}
 			}
 			YSI_g_sLastRefuse[playerid] = time;
-			//Class_ResumeRefresh(playerid);
+			//Class_ResumeContinue(playerid);
 			P:5("Class_OnPlayerRequestSpawn: Return 0");
 			return 0;
 		}

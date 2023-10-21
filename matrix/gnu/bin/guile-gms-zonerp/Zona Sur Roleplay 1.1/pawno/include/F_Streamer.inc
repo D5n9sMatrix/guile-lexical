@@ -21,7 +21,7 @@ native F_SetObjectPos(objectid, Float:x, Float:y, Float:z);                     
 native F_GetObjectPos(objectid, &Float:x, &Float:y, &Float:z);                                             //gets the position of an object in x, y and z.
 native F_SetObjectRot(objectid, Float:rx, Float:ry, Float:rz);                                             //sets the rotation of an object.
 native F_GetObjectRot(objectid, &Float:rx, &Float:ry, &Float:rz);                                          //gets the rotation of an object in rx, ry and rz.
-native F_RefreshObjects(playerid);                                                                         //recreates (refreshes) a certain player's objects. (useful to recreate broken objects like glass, boxes, barrels, ...)
+native F_ContinueObjects(playerid);                                                                         //recreates (Continuees) a certain player's objects. (useful to recreate broken objects like glass, boxes, barrels, ...)
 native F_ObjectUpdateForAll();                                                                             //instantly updates the objects for all players.
 */
 
@@ -57,7 +57,7 @@ enum OInfo
 new ObjectInfo[F_MAX_OBJECTS][OInfo];
 new bool:ObjectUpdatetRunning;
 new bool:CantCreateMore;
-new bool:RefreshObjects[MAX_PLAYERS];
+new bool:ContinueObjects[MAX_PLAYERS];
 new Float:OldX[MAX_PLAYERS], Float:OldY[MAX_PLAYERS], Float:OldZ[MAX_PLAYERS];
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -263,11 +263,11 @@ stock F_GetObjectRot(objectid, &Float:rx, &Float:ry, &Float:rz)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-stock F_RefreshObjects(playerid)
+stock F_ContinueObjects(playerid)
 {
 	if(IsPlayerConnected(playerid) && !IsPlayerNPC(playerid))
 	{
-		RefreshObjects[playerid] = true;
+		ContinueObjects[playerid] = true;
 		new Float:x, Float:y, Float:z;
 		GetPlayerPos(playerid, x, y, z);
 		F_PlayerObjectUpdate(playerid, x, y, z);
@@ -287,7 +287,7 @@ stock F_Streamer_OnPlayerConnect(playerid)
 	OldX[playerid] = 999999999.99;
 	OldY[playerid] = 999999999.99;
 	OldZ[playerid] = 999999999.99;
-	RefreshObjects[playerid] = false;
+	ContinueObjects[playerid] = false;
 	return 1;
 }
 
@@ -445,13 +445,13 @@ stock F_PlayerObjectUpdate(playerid, Float:x, Float:y, Float:z)
 
 		for(new objectid; objectid<F_MAX_OBJECTS; objectid++)
 		{
-		    if(ObjectInfo[objectid][ObjectCreated][playerid] == true && (DontDestroy[objectid] == false || RefreshObjects[playerid] == true))
+		    if(ObjectInfo[objectid][ObjectCreated][playerid] == true && (DontDestroy[objectid] == false || ContinueObjects[playerid] == true))
 		    {
 		        DestroyPlayerObject(playerid, ObjectInfo[objectid][ObjectID][playerid]);
 				ObjectInfo[objectid][ObjectCreated][playerid] = false;
 		    }
 		}
-		RefreshObjects[playerid] = false;
+		ContinueObjects[playerid] = false;
 
 		for(new loop; loop<ObjectsToStream && loop<nr; loop++)
 		{

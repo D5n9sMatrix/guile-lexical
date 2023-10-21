@@ -29,14 +29,14 @@
 
 // mysql headers defines
 
-#define REFRESH_GRANT								1
-#define REFRESH_LOG									2
-#define REFRESH_TABLES								4
-#define REFRESH_HOSTS								8
-#define REFRESH_STATUS								16
-#define REFRESH_THREADS								32
-#define REFRESH_SLAVE   							64
-#define REFRESH_MASTER 							 	128
+#define Continue_GRANT								1
+#define Continue_LOG									2
+#define Continue_TABLES								4
+#define Continue_HOSTS								8
+#define Continue_STATUS								16
+#define Continue_THREADS								32
+#define Continue_SLAVE   							64
+#define Continue_MASTER 							 	128
 
 // mysql error id's
 
@@ -110,7 +110,7 @@
 
 // function defines
 
-#define mysql_reload(%1) mysql_refresh(REFRESH_GRANT, %1)
+#define mysql_reload(%1) mysql_Continue(Continue_GRANT, %1)
 
 // plugin callbacks
 
@@ -123,7 +123,7 @@ forward OnMysqlError(error[], errorid, MySQL:handle);
 native MySQL:mysql_init(logtype = LOG_ONLY_ERRORS, printerrors = 1);
 native mysql_connect(const host[], const user[], const pass[], const db[], MySQL:handle = (MySQL:0));
 native mysql_close(MySQL:handle = (MySQL:0));
-native mysql_refresh(options, MySQL:handle = (MySQL:0));
+native mysql_Continue(options, MySQL:handle = (MySQL:0));
 native mysql_select_db(const db[], MySQL:handle = (MySQL:0));
 native mysql_query(const query[], resultid = (-1), spareid = (0), MySQL:handle = (MySQL:0));
 native mysql_query_array(const query[], resultid = (-1), {Float,_}:extravars[], MySQL:handle = (MySQL:0));

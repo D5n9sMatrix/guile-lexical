@@ -497,8 +497,8 @@ mhook OnPlayerRequestClass(playerid, classid)
 		P:5("Class_OnPlayerRequestClass() selected: %d", playerclass);
 		return Class_Goto(playerid, _:playerclass);
 	}
-	//Class_ResumeRefresh(playerid);
-	//YSI_g_sClassOptions &= ~(e_CLASS_OPTION_REFRESH_PAUSE | e_CLASS_OPTION_PAUSED);
+	//Class_ResumeContinue(playerid);
+	//YSI_g_sClassOptions &= ~(e_CLASS_OPTION_Continue_PAUSE | e_CLASS_OPTION_PAUSED);
 	//ALS_CALL_EX<PlayerRequestClass, ret>
 	SetSpawnInfo(playerid, NO_TEAM, 0, 1958.0, 1343.0, 15.0, 269.0, 0, 0, 0, 0, 0, 0);
 	SetPlayerSkin(playerid, 0);
